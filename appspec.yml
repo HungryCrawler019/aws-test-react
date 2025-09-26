@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html/user
+hooks:
+  AfterInstall:
+    - location: npm-install.sh
+      runas: root
+      timeout: 600
+  ApplicationStart:
+    - location: npm-start.sh
+      runas: root
+      timeout: 1500
