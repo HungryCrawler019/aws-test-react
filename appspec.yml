@@ -3,6 +3,7 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/user
+    overwrite: true
 hooks:
   AfterInstall:
     - location: npm-install.sh
