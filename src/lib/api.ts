@@ -1,6 +1,6 @@
 import axios from 'axios';
 import Cookies from 'js-cookie';
-
+   
 const API_BASE_URL = 'https://andy-api.cybona.com/api';
 
 // Create axios instance (force stateless: no cookies, no axios XSRF)
